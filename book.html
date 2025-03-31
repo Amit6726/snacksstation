@@ -130,7 +130,8 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
+              <a href="#" class="order_online" data-toggle="modal" data-target="#orderModal">
+                <img src="./images/delverypartners.png" alt="Order Icon" style="width: 20px; height: 20px; margin-right: 5px;" />
                 Order Online
               </a>
             </div>
@@ -304,7 +305,33 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #1c1c1c; color: #fff; border-radius: 10px;">
+        <div class="modal-header" style="border-bottom: 1px solid #444;">
+          <h5 class="modal-title" id="orderModalLabel">🍔 Order Online</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Welcome to <strong>SnacksStation!</strong></p>
+          <p>Our online order service will start soon.</p>
+          <!-- <p>For now, you can contact us at:<br> 
+          <strong style="color: #ffc107;">+91-7087376726</strong></p> -->
+          <p>For now, you can contact us at: 
+            <a href="tel:+917087376726" style="text-decoration: none;">
+              <strong style="color: #ffc107;">+91-7087376726</strong>
+            </a>
+          </p>
+          
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid #444;">
+          <a href="menu.html" class="btn" style="background-color: #ffc107; color: #000; font-weight: 600;">View Menu</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
